@@ -14,6 +14,7 @@ import Listening from '@assets/skills/listening.svg';
 import Organization from '@assets/skills/organization.svg';
 import WatchfulEye from '@assets/skills/watchful-eye.svg';
 import { Link } from 'react-router-dom';
+import { Container } from '../../styles';
 
 const skillList = [
   {
@@ -71,16 +72,18 @@ const TechRecruiterView: React.FC = () => {
           <Subtitle marginBottom={36} marginTop={16}>
             Área de Atuação
           </Subtitle>
-          <Title size={40}>Tech Recruiter</Title>
+          <Title size={48} color="#f93c3c">
+            Tech Recruiter
+          </Title>
 
-          <Text size={20} color="#323232" weight={400}>
+          <Text size={16} color="#1A1A1A" weight={500}>
             O Tech Recruiter é a pessoa responsável por conectar talentos com
             oportunidades dentro do projeto. Aqui na SouJunior, esse papel é
             essencial para garantir que tenhamos pessoas alinhadas com os nossos
             valores e com vontade de crescer juntas.
           </Text>
 
-          <Text size={20} color="#323232" weight={400}>
+          <Text size={16} color="#1A1A1A" weight={500}>
             Quem atua nessa área participa da definição dos perfis ideais,
             organiza as etapas do processo seletivo, conduz entrevistas e
             acompanha os candidatos em sua jornada até entrarem no time.
@@ -101,38 +104,40 @@ const TechRecruiterView: React.FC = () => {
         />
       </main>
 
-      <section style={{ marginBlock: '4rem 5rem' }}>
-        <Title as="h2" textAlign="center" size={32} width={568}>
-          Como funciona o processo seletivo?
-        </Title>
+      <Container>
+        <section style={{ marginBlock: '4rem 5rem' }}>
+          <Title as="h2" textAlign="center" size={40} width={568}>
+            Como funciona o processo seletivo?
+          </Title>
 
-        <Card
-          padding="0rem"
-          width={1042}
-          description="O processo seletivo é leve, humanizado e feito por pessoas voluntárias."
-          descriptionLineHeight={1.6}
-          descriptionSize={20}
-          descriptionColor="#000000"
-          descriptionWeight={400}
-          list={[
-            'Análise de inscrições.',
-            'Conversa inicial (bate-papo para conhecer a pessoa).',
-            'Conversa com o líder da área.',
-            'Alinhamento de expectativas e cultura do projeto.',
-            'Feedback final (positivo ou negativo).',
-          ]}
-          listSize={16}
-          listColor="#000000"
-          listWeight={400}
-        />
-      </section>
+          <Card
+            padding="0rem"
+            width={1042}
+            description="O processo seletivo é leve, humanizado e feito por pessoas voluntárias."
+            descriptionLineHeight={1.6}
+            descriptionSize={16}
+            descriptionColor="#1A1A1A"
+            descriptionWeight={400}
+            list={[
+              'Análise de inscrições.',
+              'Conversa inicial (bate-papo para conhecer a pessoa).',
+              'Conversa com o líder da área.',
+              'Alinhamento de expectativas e cultura do projeto.',
+              'Feedback final (positivo ou negativo).',
+            ]}
+            listSize={16}
+            listColor="#1A1A1A"
+            listWeight={400}
+          />
+        </section>
+      </Container>
 
       <section style={{ textAlign: 'center' }}>
-        <Title textAlign="center" size={32} width={708}>
+        <Title textAlign="center" size={40} width={708}>
           O papel do Tech Recruiter é garantir que tudo isso aconteça com
           clareza e empatia
         </Title>
-        <Text size={20} color="#323232" weight={400} textAlign="center">
+        <Text size={16} color="#1A1A1A" weight={500} textAlign="center">
           Além disso, vai desenvolver habilidades como:
         </Text>
 
@@ -153,7 +158,7 @@ const TechRecruiterView: React.FC = () => {
               padding="20px"
               width={191}
               height={218}
-              backgroundColor="#3C7EF9"
+              backgroundColor="#1E47AF"
               imageSrc={image}
               imageWidth={80}
               imageHeight={80}
@@ -167,21 +172,24 @@ const TechRecruiterView: React.FC = () => {
         </div>
       </section>
 
-      <Card
-        marginBlock="2rem"
-        title="Por que ser Tech Recruiter na SouJunior?"
-        list={[
-          'Experiência prática para o currículo.',
-          'Desenvolvimento de soft skills.',
-          'Desenvolva habilidades valorizadas no mercado.',
-          'Contato direto com outras áreas.',
-          'Apoio de mentores e uma rede de voluntários.',
-        ]}
-        listSize={16}
-        listColor="#323232"
-        listWeight={400}
-        listLineHeight="140%"
-      />
+      <Container>
+        <Card
+          marginBlock="2rem"
+          title="Por que ser Tech Recruiter na SouJunior?"
+          titleSize={40}
+          list={[
+            'Experiência prática para o currículo.',
+            'Desenvolvimento de soft skills.',
+            'Desenvolva habilidades valorizadas no mercado.',
+            'Contato direto com outras áreas.',
+            'Apoio de mentores e uma rede de voluntários.',
+          ]}
+          listSize={16}
+          listColor="#1A1A1A"
+          listWeight={400}
+          listLineHeight="140%"
+        />
+      </Container>
 
       <div style={{ margin: 'auto', textAlign: 'center' }}>
         <Card
@@ -190,6 +198,8 @@ const TechRecruiterView: React.FC = () => {
       carreiras e transformar o futuro de muitos profissionais da área
       tech."
           descriptionWidth={670}
+          titleSize={40}
+          descriptionSize={16}
           descriptionBlockMargin={24}
           buttonText="Faça parte!"
           buttonVariant="primary"

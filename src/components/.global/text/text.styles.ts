@@ -15,5 +15,5 @@ export const TextContainer = styled.p<TextProps>`
   margin-inline: ${({ marginInline }) =>
     typeof marginInline === 'number' ? pxToRem(marginInline) : marginInline};
   text-align: ${({ textAlign = 'left' }) => textAlign};
-  font-family: ${({ fontFamily }) => fontFamily || 'inherit'};
+  font-family: 'Funnel Sans', sans-serif;
 `;

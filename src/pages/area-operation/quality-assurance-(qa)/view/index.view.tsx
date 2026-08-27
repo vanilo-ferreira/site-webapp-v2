@@ -15,6 +15,7 @@ import Documentation from '@assets/skills/qa/documentation.svg';
 import Tests from '@assets/skills/qa/tests.svg';
 import Feedbacks from '@assets/skills/qa/feedbacks.svg';
 import { Link } from 'react-router-dom';
+import { Container } from '../../styles';
 
 const skillList = [
   {
@@ -81,21 +82,23 @@ const QAView: React.FC = () => {
           <Subtitle marginBottom={36} marginTop={16}>
             Área de Atuação
           </Subtitle>
-          <Title size={40}>Quality Assurance (QA)</Title>
+          <Title size={48} color="#3C7EF9">
+            Quality Assurance (QA)
+          </Title>
 
-          <Text size={20} color="#323232" weight={400}>
+          <Text size={16} color="#1A1A1A" weight={500}>
             A área de QA (Quality Assurance) é essencial para garantir que tudo
             o que é desenvolvido funcione bem, sem erros e com a melhor
             experiência possível para quem usa o produto.
           </Text>
 
-          <Text size={20} color="#323232" weight={400}>
+          <Text size={16} color="#1A1A1A" weight={500}>
             Aqui, a gente acredita que qualidade não é responsabilidade só de
             uma pessoa, mas o time de QA é quem puxa essa frente com mais
             profundidade, cuidado e atenção aos detalhes.
           </Text>
 
-          <Text size={20} color="#323232" weight={400}>
+          <Text size={16} color="#1A1A1A" weight={500}>
             Se você gosta de testar, encontrar inconsistências e melhorar
             processos, QA pode ser a sua área.
           </Text>
@@ -115,48 +118,50 @@ const QAView: React.FC = () => {
         />
       </main>
 
-      <section style={{ marginBlock: '4rem 5rem' }}>
-        <Title as="h2" textAlign="center" size={32}>
-          O que você faz como QA na SouJunior:
-        </Title>
+      <Container>
+        <section style={{ marginBlock: '4rem 5rem' }}>
+          <Title as="h2" textAlign="center" size={40}>
+            O que você faz como QA na SouJunior:
+          </Title>
 
-        <Card
-          padding="0rem"
-          width={1042}
-          description={
-            <>
-              <p style={{ width: '51rem' }}>
-                Como pessoa voluntária em QA, você participa de todo o processo
-                de garantia de qualidade, desde as primeiras conversas até
-                depois que uma funcionalidade vai ao ar.
-              </p>
-              <p style={{ fontWeight: 'bold', marginBlock: '1rem' }}>
-                Algumas das atividades que você pode aprender e colocar em
-                prática na SouJunior:
-              </p>
-            </>
-          }
-          descriptionLineHeight={1.6}
-          descriptionSize={20}
-          descriptionColor="#000000"
-          descriptionWeight={400}
-          descriptionTextAlign="center"
-          list={[
-            'Criar e executar planos de teste manuais.',
-            'Escrever cenários de testes com base em critérios de aceitação.',
-            'Participar das cerimônias do time (planning, review, refinamentos).',
-            'Validar entregas em diferentes dispositivos e navegadores.',
-            'Colaborar com Produto e Tech para prever possíveis erros.',
-            'Apoiar na identificação e documentação de bugs.',
-          ]}
-          listSize={16}
-          listColor="#000000"
-          listWeight={400}
-        />
-      </section>
+          <Card
+            padding="0rem"
+            width={1042}
+            description={
+              <>
+                <p style={{ width: '51rem' }}>
+                  Como pessoa voluntária em QA, você participa de todo o
+                  processo de garantia de qualidade, desde as primeiras
+                  conversas até depois que uma funcionalidade vai ao ar.
+                </p>
+                <p style={{ fontWeight: 'bold', marginBlock: '1rem' }}>
+                  Algumas das atividades que você pode aprender e colocar em
+                  prática na SouJunior:
+                </p>
+              </>
+            }
+            descriptionLineHeight={1.6}
+            descriptionSize={16}
+            descriptionColor="#1A1A1A"
+            descriptionWeight={400}
+            descriptionTextAlign="center"
+            list={[
+              'Criar e executar planos de teste manuais.',
+              'Escrever cenários de testes com base em critérios de aceitação.',
+              'Participar das cerimônias do time (planning, review, refinamentos).',
+              'Validar entregas em diferentes dispositivos e navegadores.',
+              'Colaborar com Produto e Tech para prever possíveis erros.',
+              'Apoiar na identificação e documentação de bugs.',
+            ]}
+            listSize={16}
+            listColor="#1A1A1A"
+            listWeight={400}
+          />
+        </section>
+      </Container>
 
       <section style={{ margin: '0 auto' }}>
-        <Title textAlign="center" size={32}>
+        <Title textAlign="center" size={40}>
           O que você aprende atuando como QA na SouJunior?
         </Title>
 
@@ -179,7 +184,7 @@ const QAView: React.FC = () => {
               padding="20px"
               width={191}
               height={218}
-              backgroundColor="#3C7EF9"
+              backgroundColor="#1E47AF"
               //------------
               imageSrc={image}
               imageWidth={80}
@@ -201,21 +206,24 @@ const QAView: React.FC = () => {
         </div>
       </section>
 
-      <Card
-        marginBlock="2rem"
-        title="Por que atuar como QA na SouJunior?"
-        list={[
-          'Você aprende com entregas reais, em um ambiente colaborativo.',
-          'Ganha vivência com times de Produto, Design e Desenvolvimento.',
-          'Constrói repertório para entrevistas, portfólio ou estágio.',
-          'Descobre se qualidade é uma área que faz sentido pra você.',
-          'Participa de um time onde seu olhar faz toda a diferença.',
-        ]}
-        listSize={20}
-        listColor="#323232"
-        listWeight={400}
-        listLineHeight="140%"
-      />
+      <Container>
+        <Card
+          marginBlock="2rem"
+          title="Por que atuar como QA na SouJunior?"
+          titleSize={40}
+          list={[
+            'Você aprende com entregas reais, em um ambiente colaborativo.',
+            'Ganha vivência com times de Produto, Design e Desenvolvimento.',
+            'Constrói repertório para entrevistas, portfólio ou estágio.',
+            'Descobre se qualidade é uma área que faz sentido pra você.',
+            'Participa de um time onde seu olhar faz toda a diferença.',
+          ]}
+          listSize={16}
+          listColor="#1A1A1A"
+          listWeight={400}
+          listLineHeight="140%"
+        />
+      </Container>
 
       <div style={{ margin: 'auto', textAlign: 'center' }}>
         <Card
@@ -225,6 +233,8 @@ const QAView: React.FC = () => {
       tech."
           descriptionWidth={670}
           descriptionBlockMargin={24}
+          titleSize={40}
+          descriptionSize={16}
           buttonText="Faça parte!"
           buttonVariant="primary"
           buttonLink="https://stars.soujunior.tech/"
