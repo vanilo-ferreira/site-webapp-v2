@@ -11,6 +11,7 @@ import ImageSocialMedia2 from '@assets/areas-expertise/social-media2.png';
 import Card from '@components/card';
 import Button from '@global/button';
 import { Link } from 'react-router-dom';
+import { Container } from '../../styles';
 
 const SocialMediaView: React.FC = () => {
   const { announce } = useScreenReaderAnnouncer();
@@ -49,15 +50,17 @@ const SocialMediaView: React.FC = () => {
           <Subtitle marginBottom={36} marginTop={16}>
             Área de Atuação
           </Subtitle>
-          <Title size={40}>Social Media</Title>
+          <Title size={48} color="#3C7EF9">
+            Social Media
+          </Title>
 
-          <Text size={20} color="#323232" weight={400}>
+          <Text size={16} color="#1A1A1A" weight={500}>
             A área de Social Media é responsável por dar voz ao projeto nas
             redes sociais, contando histórias, divulgando oportunidades e
             engajando a comunidade com conteúdos que refletem o nosso propósito.
           </Text>
 
-          <Text size={20} color="#323232" weight={400}>
+          <Text size={16} color="#1A1A1A" weight={500}>
             Aqui, a comunicação vai além de likes: ela inspira, educa, atrai
             voluntários e gera impacto real.
           </Text>
@@ -100,7 +103,7 @@ const SocialMediaView: React.FC = () => {
             </>
           }
           descriptionSize={16}
-          descriptionColor="#000000"
+          descriptionColor="#1A1A1A"
           descriptionWeight={400}
           descriptionWidth={500}
           descriptionMarginInline={0}
@@ -113,27 +116,30 @@ const SocialMediaView: React.FC = () => {
             'Recebe feedbacks construtivos para aprimorar seu texto.',
           ]}
           listSize={16}
-          listColor="#000000"
+          listColor="#1A1A1A"
           listWeight={400}
           listMarginLeft={28}
         />
       </section>
 
-      <Card
-        marginBlock="2rem"
-        title="Por que atuar com Social Media na SouJunior?"
-        list={[
-          'Vivência com planejamento e execução de estratégias reais.',
-          'Aprendizado prático em equipe multidisciplinar.',
-          'Acompanhamento de métricas, feedbacks e engajamento.',
-          'Construção de portfólio com peças e conteúdos publicados.',
-          'Liberdade criativa com orientação e espaço para crescer.',
-        ]}
-        listSize={20}
-        listColor="#323232"
-        listWeight={400}
-        listLineHeight="140%"
-      />
+      <Container>
+        <Card
+          marginBlock="2rem"
+          title="Por que atuar com Social Media na SouJunior?"
+          titleSize={40}
+          list={[
+            'Vivência com planejamento e execução de estratégias reais.',
+            'Aprendizado prático em equipe multidisciplinar.',
+            'Acompanhamento de métricas, feedbacks e engajamento.',
+            'Construção de portfólio com peças e conteúdos publicados.',
+            'Liberdade criativa com orientação e espaço para crescer.',
+          ]}
+          listSize={16}
+          listColor="#1A1A1A"
+          listWeight={400}
+          listLineHeight="140%"
+        />
+      </Container>
 
       <div style={{ margin: 'auto', textAlign: 'center' }}>
         <Card
@@ -142,6 +148,8 @@ const SocialMediaView: React.FC = () => {
       carreiras e transformar o futuro de muitos profissionais da área
       tech."
           descriptionWidth={670}
+          titleSize={40}
+          descriptionSize={16}
           descriptionBlockMargin={24}
           buttonText="Faça parte!"
           buttonVariant="primary"

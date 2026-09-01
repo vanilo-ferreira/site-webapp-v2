@@ -6,6 +6,7 @@ import {
 import Subtitle from '@global/subtitle';
 import Text from '@global/text';
 import Title from '@global/title';
+import { Container } from '../../styles';
 import Data from '@assets/areas-expertise/data.png';
 import Data2 from '@assets/areas-expertise/data2.png';
 import Card from '@components/card';
@@ -49,15 +50,17 @@ const DataView: React.FC = () => {
           <Subtitle marginBottom={36} marginTop={16}>
             Área de Atuação
           </Subtitle>
-          <Title size={40}>Dados</Title>
+          <Title size={48} color="#3C7EF9">
+            Dados
+          </Title>
 
-          <Text size={20} color="#323232" weight={400}>
+          <Text size={16} color="#1A1A1A" weight={500}>
             Na área de Dados, nosso foco é transformar informações em decisões
             estratégicas. Trabalhamos para gerar insights, criar visualizações
             claras, organizar bases de dados e ajudar todas as áreas do projeto
             a tomar decisões com mais inteligência e segurança.
           </Text>
-          <Text size={20} color="#323232" weight={400}>
+          <Text size={16} color="#1A1A1A" weight={500}>
             Se você gosta de números, lógica, organização ou curte encontrar
             padrões e contar histórias com dados, este pode ser o seu espaço.
           </Text>
@@ -75,7 +78,7 @@ const DataView: React.FC = () => {
       </main>
 
       <section>
-        <Title as="h2" textAlign="center" size={32} width={568}>
+        <Title as="h2" textAlign="center" size={40} width={568}>
           Conheça os cargos de Dados que você pode explorar com a gente:
         </Title>
 
@@ -87,12 +90,12 @@ const DataView: React.FC = () => {
           imageSrc={Data2}
           title="Analytics"
           titleAs="h3"
-          titleSize={24}
+          titleSize={40}
           titleMarginTop={45}
           description="Quem atua com Analytics ajuda os times a entender 
             o que os dados estão dizendo. A pessoa analista pode:"
           descriptionSize={16}
-          descriptionColor="#000000"
+          descriptionColor="#1A1A1A"
           descriptionWeight={400}
           descriptionWidth={404}
           list={[
@@ -102,29 +105,33 @@ const DataView: React.FC = () => {
             'Trabalhar com ferramentas como Google Sheets, Looker Studio, SQL ou Python.',
           ]}
           listSize={16}
-          listColor="#000000"
+          listColor="#1A1A1A"
           listWeight={400}
         />
       </section>
-
-      <Card
-        marginBlock="2rem"
-        title="Por que atuar com Dados na SouJunior?"
-        description="Participar da área de Dados em um projeto voluntário é uma chance
-          incrível de aprender e aplicar conhecimentos de forma prática. Você vai:"
-        descriptionWidth={688}
-        list={[
-          'Trabalhar com dados reais e diversos tipos de problemas.',
-          'Ajudar diferentes áreas a tomarem decisões com base em evidências.',
-          'Desenvolver seu portfólio e experiência com ferramentas do mercado.',
-          'Explorar diferentes frentes e entender qual te atrai mais.',
-        ]}
-        listSize={20}
-        listColor="#323232"
-        listWeight={400}
-        listLineHeight="140%"
-        listMarginLeft={22}
-      />
+      <Container>
+        <Card
+          marginBlock="2rem"
+          title="Por que atuar com Dados na SouJunior?"
+          titleSize={40}
+          description="Participar da área de Dados em um projeto voluntário é uma chance
+            incrível de aprender e aplicar conhecimentos de forma prática. Você vai:"
+          descriptionWidth={688}
+          descriptionSize={16}
+          descriptionColor="#1A1A1A"
+          list={[
+            'Trabalhar com dados reais e diversos tipos de problemas.',
+            'Ajudar diferentes áreas a tomarem decisões com base em evidências.',
+            'Desenvolver seu portfólio e experiência com ferramentas do mercado.',
+            'Explorar diferentes frentes e entender qual te atrai mais.',
+          ]}
+          listSize={16}
+          listColor="#1A1A1A"
+          listWeight={400}
+          listLineHeight="140%"
+          listMarginLeft={22}
+        />
+      </Container>
 
       <div style={{ margin: 'auto', textAlign: 'center' }}>
         <Card
@@ -134,6 +141,8 @@ const DataView: React.FC = () => {
       tech."
           descriptionWidth={670}
           descriptionBlockMargin={24}
+          titleSize={40}
+          descriptionSize={16}
           buttonText="Faça parte!"
           buttonVariant="primary"
           buttonLink="https://stars.soujunior.tech/"

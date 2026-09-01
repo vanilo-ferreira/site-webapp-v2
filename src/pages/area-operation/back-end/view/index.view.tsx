@@ -17,6 +17,7 @@ import ORM from '@assets/skills/back-end/orm-odm.svg';
 import Jest from '@assets/skills/back-end/jest.svg';
 import Docker from '@assets/skills/back-end/docker.svg';
 import { Link } from 'react-router-dom';
+import { Container } from '../../styles';
 
 const skillList = [
   {
@@ -93,16 +94,18 @@ const BackEndView: React.FC = () => {
           <Subtitle marginBottom={36} marginTop={16}>
             Área de Atuação
           </Subtitle>
-          <Title size={40}>Back-end</Title>
+          <Title size={48} color="#3C7EF9">
+            Back-end
+          </Title>
 
-          <Text size={20} color="#323232" weight={400}>
+          <Text size={16} color="#1A1A1A" weight={500}>
             Na área de Back-end, você cuida da lógica por trás do que aparece na
             tela. É aqui que moram as regras de negócio, as integrações com
             banco de dados, as rotas das APIs e tudo o que garante que o sistema
             funcione com segurança, escalabilidade e eficiência.
           </Text>
 
-          <Text size={20} color="#323232" weight={400}>
+          <Text size={16} color="#1A1A1A" weight={500}>
             Se você curte lógica, organização, performance e resolver problemas
             que exigem pensamento estruturado, essa pode ser sua área na
             iniciativa.
@@ -123,52 +126,54 @@ const BackEndView: React.FC = () => {
         />
       </main>
 
-      <section style={{ marginBlock: '4rem 5rem' }}>
-        <Title as="h2" textAlign="center" size={32}>
-          O que você aprende e faz como Back-end na SouJunior{' '}
-        </Title>
+      <Container>
+        <section style={{ marginBlock: '4rem 5rem' }}>
+          <Title as="h2" textAlign="center" size={40}>
+            O que você aprende e faz como Back-end na SouJunior{' '}
+          </Title>
 
-        <Card
-          padding="0rem"
-          //------------
-          description={
-            <>
-              &nbsp; &nbsp; &nbsp; Na SouJunior, a atuação em back-end é voltada
-              para aplicações reais, com foco &nbsp; &nbsp; &nbsp; em qualidade
-              de código e colaboração com outras áreas como Front-end, Produto e
-              QA.
-              <br />
-              <br />
-              Você vai aprender e participar de atividades como:
-            </>
-          }
-          descriptionLineHeight={1.6}
-          descriptionSize={20}
-          descriptionColor="#000000"
-          descriptionWeight={400}
-          descriptionWidth={814}
-          descriptionTextAlign="center"
-          //------------
-          list={[
-            'Construção e manutenção de APIs REST.',
-            'Integração com bancos de dados relacionais e não-relacionais.',
-            'Criação de rotas, middlewares e autenticação.',
-            'Modelagem de dados e regras de negócio.',
-            'Testes de endpoints e cobertura de erros.',
-            'Documentação de endpoints e boas práticas de versionamento.',
-          ]}
-          listSize={20}
-          listColor="#000000"
-          listWeight={400}
-          listMarginTop={16}
-          //------------
-          paragraph="Tudo isso com revisões de código, apoio de outras pessoas desenvolvedoras e participação em cerimônias do time.."
-          paragraphSize={17}
-        />
-      </section>
+          <Card
+            padding="0rem"
+            //------------
+            description={
+              <>
+                &nbsp; &nbsp; &nbsp; Na SouJunior, a atuação em back-end é
+                voltada para aplicações reais, com foco &nbsp; &nbsp; &nbsp; em
+                qualidade de código e colaboração com outras áreas como
+                Front-end, Produto e QA.
+                <br />
+                <br />
+                Você vai aprender e participar de atividades como:
+              </>
+            }
+            descriptionLineHeight={1.6}
+            descriptionSize={16}
+            descriptionColor="#1A1A1A"
+            descriptionWeight={400}
+            descriptionWidth={814}
+            descriptionTextAlign="center"
+            //------------
+            list={[
+              'Construção e manutenção de APIs REST.',
+              'Integração com bancos de dados relacionais e não-relacionais.',
+              'Criação de rotas, middlewares e autenticação.',
+              'Modelagem de dados e regras de negócio.',
+              'Testes de endpoints e cobertura de erros.',
+              'Documentação de endpoints e boas práticas de versionamento.',
+            ]}
+            listSize={16}
+            listColor="#1A1A1A"
+            listWeight={400}
+            listMarginTop={16}
+            //------------
+            paragraph="Tudo isso com revisões de código, apoio de outras pessoas desenvolvedoras e participação em cerimônias do time.."
+            paragraphSize={17}
+          />
+        </section>
+      </Container>
 
       <section style={{ margin: '0 auto' }}>
-        <Title textAlign="center" size={32}>
+        <Title textAlign="center" size={40}>
           Tecnologias que usamos e incentivamos a aprender:{' '}
         </Title>
 
@@ -192,7 +197,7 @@ const BackEndView: React.FC = () => {
               padding="20px"
               width={191}
               height={218}
-              backgroundColor="#3C7EF9"
+              backgroundColor="#1E47AF"
               //------------
               imageSrc={image}
               imageWidth={80}
@@ -214,20 +219,23 @@ const BackEndView: React.FC = () => {
         </div>
       </section>
 
-      <Card
-        marginBlock="2rem"
-        title="Por que atuar como Back-end na SouJunior?"
-        list={[
-          'Aplique o que aprende nos cursos em um ambiente real.',
-          'Resolva problemas técnicos com propósito social.',
-          'Aprenda a trabalhar em equipe com processos de mercado.',
-          'Desenvolva um portfólio técnico com entregas concretas.',
-        ]}
-        listSize={16}
-        listColor="#323232"
-        listWeight={400}
-        listLineHeight="140%"
-      />
+      <Container>
+        <Card
+          marginBlock="2rem"
+          title="Por que atuar como Back-end na SouJunior?"
+          titleSize={40}
+          list={[
+            'Aplique o que aprende nos cursos em um ambiente real.',
+            'Resolva problemas técnicos com propósito social.',
+            'Aprenda a trabalhar em equipe com processos de mercado.',
+            'Desenvolva um portfólio técnico com entregas concretas.',
+          ]}
+          listSize={16}
+          listColor="#1A1A1A"
+          listWeight={400}
+          listLineHeight="140%"
+        />
+      </Container>
 
       <div style={{ margin: 'auto', textAlign: 'center' }}>
         <Card
@@ -236,6 +244,8 @@ const BackEndView: React.FC = () => {
       carreiras e transformar o futuro de muitos profissionais da área
       tech."
           descriptionWidth={670}
+          titleSize={40}
+          descriptionSize={16}
           descriptionBlockMargin={24}
           buttonText="Faça parte!"
           buttonVariant="primary"

@@ -16,6 +16,7 @@ import Figma from '@assets/skills/front-end/figma.svg';
 import Git from '@assets/skills/git.svg';
 import Api from '@assets/skills/front-end/api.svg';
 import { Link } from 'react-router-dom';
+import { Container } from '../../styles';
 
 const skillList = [
   {
@@ -87,9 +88,11 @@ const FrontEndView: React.FC = () => {
           <Subtitle marginBottom={36} marginTop={16}>
             Área de Atuação
           </Subtitle>
-          <Title size={40}>Front-end</Title>
+          <Title size={48} color="#3C7EF9">
+            Front-end
+          </Title>
 
-          <Text size={20} color="#323232" weight={400}>
+          <Text size={16} color="#1A1A1A" weight={500}>
             A área de Front-end é responsável por transformar ideias e designs
             em telas reais, aquelas que as pessoas usuárias de fato vêem e
             interagem. É aqui que o visual do projeto ganha vida por meio de
@@ -97,7 +100,7 @@ const FrontEndView: React.FC = () => {
             responsiva.
           </Text>
 
-          <Text size={20} color="#323232" weight={400}>
+          <Text size={16} color="#1A1A1A" weight={500}>
             Se você gosta de ver o resultado do seu trabalho na prática, tem
             curiosidade por HTML, CSS, JavaScript e frameworks como React, esse
             pode ser o seu lugar.
@@ -118,37 +121,39 @@ const FrontEndView: React.FC = () => {
         />
       </main>
 
-      <section style={{ marginBlock: '4rem 5rem' }}>
-        <Title as="h2" textAlign="center" size={32}>
-          O que você aprende e faz no Front-end na SouJunior{' '}
-        </Title>
+      <Container>
+        <section style={{ marginBlock: '4rem 5rem' }}>
+          <Title as="h2" textAlign="center" size={40}>
+            O que você aprende e faz no Front-end na SouJunior{' '}
+          </Title>
 
-        <Card
-          padding="0rem"
-          width={1042}
-          description="Na SouJunior, você vai colocar a mão na massa e colaborar com pessoas 
+          <Card
+            padding="0rem"
+            width={1042}
+            description="Na SouJunior, você vai colocar a mão na massa e colaborar com pessoas 
             de Produto, Design, QA e Backend para desenvolver interfaces completas."
-          descriptionLineHeight={1.6}
-          descriptionSize={20}
-          descriptionColor="#000000"
-          descriptionWeight={400}
-          descriptionWidth={686}
-          list={[
-            'Desenvolver telas com base em protótipos de UI/UX (Figma).',
-            'Aplicar boas práticas de responsividade e acessibilidade.',
-            'Colaborar em revisões de código com outros devs.',
-            'Conectar o frontend com o backend via APIs.',
-            'Corrigir bugs e melhorar a experiência do usuário.',
-            'Participar das cerimônias ágeis do time (plannings, reviews, etc.).',
-          ]}
-          listSize={16}
-          listColor="#000000"
-          listWeight={400}
-        />
-      </section>
+            descriptionLineHeight={1.6}
+            descriptionSize={16}
+            descriptionColor="#1A1A1A"
+            descriptionWeight={400}
+            descriptionWidth={686}
+            list={[
+              'Desenvolver telas com base em protótipos de UI/UX (Figma).',
+              'Aplicar boas práticas de responsividade e acessibilidade.',
+              'Colaborar em revisões de código com outros devs.',
+              'Conectar o frontend com o backend via APIs.',
+              'Corrigir bugs e melhorar a experiência do usuário.',
+              'Participar das cerimônias ágeis do time (plannings, reviews, etc.).',
+            ]}
+            listSize={16}
+            listColor="#1A1A1A"
+            listWeight={400}
+          />
+        </section>
+      </Container>
 
       <section style={{ margin: '0 auto' }}>
-        <Title textAlign="center" size={32} width={452}>
+        <Title textAlign="center" size={40} width={452}>
           Ferramentas e tecnologias que você pode explorar
         </Title>
         <Text size={20} color="#323232" weight={400} textAlign="center">
@@ -175,7 +180,7 @@ const FrontEndView: React.FC = () => {
               padding="20px"
               width={191}
               height={218}
-              backgroundColor="#3C7EF9"
+              backgroundColor="#1E47AF"
               //------------
               imageSrc={img}
               imageWidth={80}
@@ -197,21 +202,24 @@ const FrontEndView: React.FC = () => {
         </div>
       </section>
 
-      <Card
-        marginBlock="2rem"
-        title="Por que atuar como Front-end na SouJunior?"
-        list={[
-          'Colocar seus estudos em ação com um produto real.',
-          'Aprender a colaborar com times multidisciplinares.',
-          'Ganhar experiência com boas práticas de mercado.',
-          'Construir seu portfólio com entregas concretas.',
-          'Ter mentorias e apoio de pessoas mais experientes da área.',
-        ]}
-        listSize={16}
-        listColor="#323232"
-        listWeight={400}
-        listLineHeight="140%"
-      />
+      <Container>
+        <Card
+          marginBlock="2rem"
+          title="Por que atuar como Front-end na SouJunior?"
+          titleSize={40}
+          list={[
+            'Colocar seus estudos em ação com um produto real.',
+            'Aprender a colaborar com times multidisciplinares.',
+            'Ganhar experiência com boas práticas de mercado.',
+            'Construir seu portfólio com entregas concretas.',
+            'Ter mentorias e apoio de pessoas mais experientes da área.',
+          ]}
+          listSize={16}
+          listColor="#1A1A1A"
+          listWeight={400}
+          listLineHeight="140%"
+        />
+      </Container>
 
       <div style={{ margin: 'auto', textAlign: 'center' }}>
         <Card
@@ -221,6 +229,8 @@ const FrontEndView: React.FC = () => {
       tech."
           descriptionWidth={670}
           descriptionBlockMargin={24}
+          titleSize={40}
+          descriptionSize={16}
           buttonText="Faça parte!"
           buttonVariant="primary"
           buttonLink="https://stars.soujunior.tech/"

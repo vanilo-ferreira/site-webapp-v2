@@ -6,6 +6,7 @@ import {
 import Subtitle from '@global/subtitle';
 import Text from '@global/text';
 import Title from '@global/title';
+import { Container } from '../../styles';
 import ImageDesign from '@assets/areas-expertise/design.png';
 import Img from '@assets/areas-expertise/design-carousel/img.png';
 import Img2 from '@assets/areas-expertise/design-carousel/img2.png';
@@ -82,7 +83,7 @@ const DesignView: React.FC = () => {
       );
     }
 
-    // Announce page change to screen readers
+    // Announce page change for screen readers
     announce('Página de Design System carregada');
 
     // Focus main content for better navigation
@@ -102,21 +103,23 @@ const DesignView: React.FC = () => {
           <Subtitle marginBottom={36} marginTop={16}>
             Área de Atuação
           </Subtitle>
-          <Title size={40}>Design</Title>
+          <Title size={48} color="#3C7EF9">
+            Design
+          </Title>
 
-          <Text color="#323232" weight={400}>
+          <Text size={16} color="#1A1A1A" weight={500}>
             Na área de Design, o foco está em criar experiências que sejam
             bonitas, intuitivas e centradas nas pessoas. Aqui, design não é só
             aparência, é sobre resolver problemas, facilitar jornadas e gerar
             conexões reais com quem usa o projeto.
           </Text>
 
-          <Text color="#323232" weight={400}>
+          <Text size={16} color="#1A1A1A" weight={500}>
             Se você é uma pessoa criativa, curiosa e gosta de pensar em como as
             coisas funcionam para os outros, essa área tem muito a te oferecer.
           </Text>
 
-          <Text color="#323232" weight={400}>
+          <Text size={16} color="#1A1A1A" weight={500}>
             Dentro do nosso projeto, temos cargos específicos para diferentes
             etapas e perfis do design.
           </Text>
@@ -140,7 +143,7 @@ const DesignView: React.FC = () => {
         <Title
           as="h2"
           textAlign="center"
-          size={32}
+          size={40}
           width={510}
           marginBottom={48}
         >
@@ -150,20 +153,23 @@ const DesignView: React.FC = () => {
         <CarouselAreaOperation items={carouselItems} />
       </section>
 
-      <Card
-        marginBlock="2rem"
-        title="Por que atuar com Design na SouJunior?"
-        list={[
-          'Participar de entregas de verdade, com contexto e propósito.',
-          'Trabalhar com pessoas de Produto, Tech, Marketing e Pesquisa.',
-          'Desenvolver seu portfólio com segurança e acompanhamento.',
-          'Aprender a colaborar, iterar e defender ideias com base em dados.',
-        ]}
-        listSize={20}
-        listColor="#323232"
-        listWeight={400}
-        listLineHeight="140%"
-      />
+      <Container>
+        <Card
+          marginBlock="2rem"
+          title="Por que atuar com Design na SouJunior?"
+          titleSize={40}
+          list={[
+            'Participar de entregas de verdade, com contexto e propósito.',
+            'Trabalhar com pessoas de Produto, Tech, Marketing e Pesquisa.',
+            'Desenvolver seu portfólio com segurança e acompanhamento.',
+            'Aprender a colaborar, iterar e defender ideias com base em dados.',
+          ]}
+          listSize={16}
+          listColor="#1A1A1A"
+          listWeight={400}
+          listLineHeight="140%"
+        />
+      </Container>
 
       <div style={{ margin: 'auto', textAlign: 'center' }}>
         <Card
@@ -172,6 +178,8 @@ const DesignView: React.FC = () => {
       carreiras e transformar o futuro de muitos profissionais da área
       tech."
           descriptionWidth={670}
+          titleSize={40}
+          descriptionSize={16}
           descriptionBlockMargin={24}
           buttonText="Faça parte!"
           buttonVariant="primary"

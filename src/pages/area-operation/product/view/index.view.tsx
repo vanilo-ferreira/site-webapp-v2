@@ -16,6 +16,7 @@ import Card from '@components/card';
 import Button from '@global/button';
 import CarouselAreaOperation from '@components/carouselAreaOperation';
 import { Link } from 'react-router-dom';
+import { Container } from '../../styles';
 
 const carouselItems = [
   {
@@ -121,16 +122,18 @@ const ProductView: React.FC = () => {
           <Subtitle marginBottom={36} marginTop={16}>
             Área de Atuação
           </Subtitle>
-          <Title size={40}>Produto</Title>
+          <Title size={48} color="#3C7EF9">
+            Produto
+          </Title>
 
-          <Text size={20} color="#323232" weight={400}>
+          <Text size={16} color="#1A1A1A" weight={500}>
             A área de Produto é o coração estratégico de muitos times. São
             analisados problemas reais, organização de ideias, validação de
             hipóteses e acompanha a criação de soluções que geram valor para
             quem as usa.
           </Text>
 
-          <Text size={20} color="#323232" weight={400}>
+          <Text size={16} color="#1A1A1A" weight={500}>
             No nosso voluntariado, a área de Produto está dividida em frentes
             que oferecem espaço para aprendizado, colaboração e crescimento
             prático.
@@ -152,28 +155,31 @@ const ProductView: React.FC = () => {
       </main>
 
       <section>
-        <Title as="h2" textAlign="center" size={32} width={568}>
+        <Title as="h2" textAlign="center" size={40} width={568}>
           Conheça os cargos de Produto que você pode explorar com a gente:
         </Title>
 
         <CarouselAreaOperation items={carouselItems} />
       </section>
 
-      <Card
-        marginBlock="2rem"
-        title="Por que atuar em Produto na SouJunior?"
-        list={[
-          'Aprenda na prática com pessoas de diferentes áreas.',
-          'Participe de entregas reais com impacto no projeto.',
-          'Desenvolva habilidades valorizadas no mercado.',
-          'Descubra qual frente de Produto mais combina com você.',
-          'Construa um portfólio e fortaleça seu LinkedIn com experiência real.',
-        ]}
-        listSize={20}
-        listColor="#323232"
-        listWeight={400}
-        listLineHeight="140%"
-      />
+      <Container>
+        <Card
+          marginBlock="2rem"
+          title="Por que atuar em Produto na SouJunior?"
+          titleSize={40}
+          list={[
+            'Aprenda na prática com pessoas de diferentes áreas.',
+            'Participe de entregas reais com impacto no projeto.',
+            'Desenvolva habilidades valorizadas no mercado.',
+            'Descubra qual frente de Produto mais combina com você.',
+            'Construa um portfólio e fortaleça seu LinkedIn com experiência real.',
+          ]}
+          listSize={16}
+          listColor="#1A1A1A"
+          listWeight={400}
+          listLineHeight="140%"
+        />
+      </Container>
 
       <div style={{ margin: 'auto', textAlign: 'center' }}>
         <Card
@@ -183,6 +189,8 @@ const ProductView: React.FC = () => {
       tech."
           descriptionWidth={670}
           descriptionBlockMargin={24}
+          titleSize={40}
+          descriptionSize={16}
           buttonText="Faça parte!"
           buttonVariant="primary"
           buttonLink="https://stars.soujunior.tech/"

@@ -4,6 +4,7 @@ import type { SubtitleProps } from './types';
 
 export const SubtitleContainer = styled.h2<SubtitleProps>`
   font-size: ${({ size = 24 }) => `${pxToRem(size)}`};
+  font-family: 'Funnel Sans', sans-serif;
   color: ${({ color = '#666666' }) => color};
   margin-top: ${({ marginTop = 0 }) => `${pxToRem(marginTop)}`};
   margin-bottom: ${({ marginBottom = 0 }) => `${pxToRem(marginBottom)}`};
