@@ -37,7 +37,10 @@ export const ImpactContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 160px;
+
+  @media (max-width: 431px) {
+    margin-top: 160px;
+  }
 `;
 
 export const ImpactInformation = styled.div`
