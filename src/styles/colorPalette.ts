@@ -1,7 +1,9 @@
 export const colorPalette = {
   primaryColor: '#3C7EF9',
   primaryHover: '#002C66',
-  secondaryColor: '#0A1662',
+  paragraphColor: '#1A1A1A',
+  secondaryColor: '#1E47AF',
+  thirdcolor: '#eff4ff',
   successColor: '#155724',
   warningColor: '#856404',
   dangerColor: '#721c24',
