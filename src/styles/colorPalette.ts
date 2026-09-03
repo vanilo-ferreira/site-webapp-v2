@@ -4,6 +4,7 @@ export const colorPalette = {
   paragraphColor: '#1A1A1A',
   secondaryColor: '#1E47AF',
   thirdcolor: '#eff4ff',
+  fourthColor: '#D9D9D9',
   successColor: '#155724',
   warningColor: '#856404',
   dangerColor: '#721c24',

@@ -27,6 +27,7 @@ export const TextContainer = styled.div`
   max-width: 714px;
   height: 240px;
   margin-bottom: 4rem;
+  margin-top: 16px;
 
   @media (max-width: 431px) {
     width: 350px;
@@ -49,6 +50,7 @@ export const ImpactInformation = styled.div`
   justify-content: space-evenly;
   width: 100%;
   margin-bottom: 4rem;
+  margin-top: 28px;
 
   @media (max-width: 431px) {
     flex-direction: column;
